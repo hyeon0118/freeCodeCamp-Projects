@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+}
+
+body {
+  margin: 0;
+  left: 0;
+  background-attachment: fixed;
+  background-image: linear-gradient(
+      0deg,
+      rgba(136, 136, 206, 0.7),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url('https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg');
+
+  color: #ffffff;
+}
+
+.input {
+  display: block;
+  width: 98%;
+  height: 30px;
+  padding: 3px 0px 3px 10px;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+span {
+  font-size: 13px;
+}
+
+#title {
+  font-size: 30px;
+  font-weight: lighter;
+  margin-bottom: 0;
+}
+
+#description {
+  font-style: italic;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+#main {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.form-div {
+  margin-bottom: 40px;
+}
+
+#survey-form {
+  background-color: rgba(0, 0, 0, 0.6);
+  min-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  border-radius: 5px;
+  padding: 50px 40px 50px 40px;
+}
+
+#feature,
+#dropdown {
+  height: 35px;
+  width: 100%;
+}
+
+fieldset {
+  border-style: none;
+}
+
+.radio,
+.checkbox {
+  display: block;
+  padding: 5px;
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+  transform: scale(1.5);
+}
+
+.checkbox {
+  padding: 3px;
+}
+
+#comment {
+  height: 100px;
+  border-radius: 0;
+}
+
+input[type='submit'] {
+  background-color: #6abd6a;
+  color: white;
+  height: 50px;
+}

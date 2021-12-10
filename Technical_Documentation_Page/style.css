@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  width: 100vw;
+  font-family: sans-serif;
+  line-height: 30px;
+}
+
+#main-doc {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+#title {
+  font-size: 30px;
+  text-align: center;
+  text-justify: middle;
+  margin-top: 20px;
+}
+
+#navbar {
+  overflow: hidden;
+  height: 100vh;
+  border-right: 2px gray solid;
+  display: grid;
+  grid-template-rows: 80px 1fr;
+  min-width: 300px;
+}
+
+#navbar ul {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  border: 1px black solid;
+  border-bottom: none;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+#navbar ul li {
+  list-style: none;
+  padding: 0;
+  border-bottom: 1px black solid;
+  margin: 0;
+}
+
+#navbar li a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 15px 20px;
+}
+
+#contents {
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 100vh;
+  padding: 20px 30px;
+}
+
+#contents header {
+  font-size: 30px;
+}
+
+.main-section {
+  margin-bottom: 50px;
+}
+
+code {
+  padding: 5px 10px;
+  background-color: #eee;
+  border-radius: 8px;
+  display: block;
+}
+
+@media screen and (max-width: 815px) {
+  #main-doc {
+    display: grid;
+    grid-template-rows: 260px 1fr;
+    overflow: hidden;
+  }
+
+  #navbar {
+    width: 100vw;
+    height: 260px;
+    border-right: none;
+    border-bottom: 2px black solid;
+    overflow-x: hidden;
+    z-index: 2;
+    position: fixed;
+  }
+
+  #contents {
+    position: fixed;
+    padding: 20px;
+    margin: 0;
+    margin-top: 265px;
+  }
+}

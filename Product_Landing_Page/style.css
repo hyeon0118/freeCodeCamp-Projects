@@ -1,0 +1,233 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #eee;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#header {
+  position: fixed;
+  display: flex;
+  top: 0;
+  width: 100vw;
+  min-height: 75px;
+  padding: 0px 20px;
+  align-items: center;
+  flex-direction: inline;
+  align-items: center;
+  background-color: #eee;
+}
+
+@media (max-width: 650px) {
+  #header {
+    flex-direction: column;
+  }
+
+  #header ul {
+    flex-direction: column;
+  }
+}
+
+.logo {
+  width: 60vw;
+}
+
+#header-img {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+}
+
+#nav-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+#nav-bar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#nav-bar ul li {
+  padding-left: 30px;
+}
+
+#email {
+  height: 25px;
+  min-width: 250px;
+}
+
+#submit {
+  display: block;
+  margin: 15px auto;
+  background-color: rgb(255, 214, 101);
+  height: 28px;
+  width: 150px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+#features {
+  display: grid;
+  width: 90vw;
+  max-width: 1000px;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+#materials,
+#ship,
+#quality {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  color: darkorange;
+  width: 80px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.contents {
+  justify-content: center;
+  align-items: center;
+}
+
+#features h2 {
+  margin-bottom: 0;
+}
+
+#features div {
+  margin: 10px;
+}
+
+#price {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 90vw;
+  max-width: 1000px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 0;
+  padding-top: 20px;
+}
+
+.trombones {
+  width: 300px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  text-align: center;
+  border: 1px #000 solid;
+  margin: auto;
+}
+
+.names {
+  background-color: rgb(214, 214, 214);
+  height: 50px;
+  display: flex;
+  text-justify: center;
+  align-items: center;
+  justify-content: center;
+  text-justify: center;
+}
+
+.trombones h3 {
+  width: 300px;
+  font-weight: bold;
+  margin: 0;
+  display: inline;
+  text-transform: uppercase;
+}
+
+.trombones h4 {
+  font-size: 25px;
+  margin: 20px auto;
+}
+
+.description {
+  margin-bottom: 20px;
+  line-height: 30px;
+}
+
+#price button {
+  background-color: rgb(255, 214, 101);
+  text-transform: uppercase;
+  font-size: 20px;
+  border: none;
+  padding: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#price button:hover {
+  background-color: darkorange;
+  transition: ease 1s;
+}
+
+#footer {
+  margin-bottom: 0;
+  background-color: rgb(214, 214, 214);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 30px;
+}
+
+#footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin: 0;
+}
+
+#footer ul li {
+  justify-content: space-around;
+  width: 80px;
+}
+
+#footer div {
+  margin: 0;
+}
+
+@media (min-width: 500px) {
+}
